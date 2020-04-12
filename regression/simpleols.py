@@ -16,7 +16,7 @@ class simpleols:
             
             returns: 
                 X: the x axis values
-                Y: the true values for X
+                Y: the true values for x offset by the error term u ~ N (0, error_sigma)
                 Y_hat: the estimated line of best fit
                 b1_hat: OLS estimator for b1
                 b2_hat: OLS estimator for b2
@@ -24,7 +24,7 @@ class simpleols:
         """
 
         # construct N samples  following the line y = b1 + b2x + u
-        # where the error term u ~ N(0, 0.5)
+        # where the error term u ~ N(0, error_sigma)
         u = np.random.normal(0, error_sigma, N)
         X = np.arange(0, maxX, maxX/N)
 
