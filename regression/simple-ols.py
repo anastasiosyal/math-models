@@ -32,10 +32,6 @@ b1_hat = ybar - b2_hat * xbar
 # Line of best fit
 yhat = b1_hat + b2_hat * X
 
-#denominator = X.dot(X) - X.mean() * X.sum()
-#a = ( X.dot(Y) - Y.mean()*X.sum() ) / denominator
-#b = ( Y.mean() * X.dot(X) - X.mean() * X.dot(Y) ) / denominator
-
 plt.scatter(X, Y)
 plt.plot(X, yhat)
 plt.show()
