@@ -2,7 +2,7 @@ import numpy as np
 
 class simpleols:
 
-    def estimate(self, b1 = 1, b2 = 2, N=50, error_sigma=1, maxX=5):
+    def estimate(self, b1 = 1, b2 = 2, N=30, error_sigma=1, maxX=5):
         """
             Creates a sample of Size N data points sampled from 
             Y = b1 + b2*X + u
